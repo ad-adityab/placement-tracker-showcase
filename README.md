@@ -2,7 +2,7 @@
 
 A Chrome extension I built for my MBA batch during placement season. It turns a cluttered placement portal into one clear view: what closes soon, what each application costs, and what to do next.
 
-**~70 students use it every week.** [Chrome Web Store](https://chromewebstore.google.com/detail/candijbnhbmpjcjdfglbeeapaedllahb) · [Privacy policy](https://thebettercampus.netlify.app/tracker-privacy/)
+**120 installs · 75 students use it every week.** [Chrome Web Store](https://chromewebstore.google.com/detail/candijbnhbmpjcjdfglbeeapaedllahb) · [Privacy policy](https://thebettercampus.netlify.app/tracker-privacy/)
 
 > Independent student project. Not made, run or endorsed by ISB or its placement team.
 
@@ -35,11 +35,14 @@ flowchart LR
 - **A service worker** keeps the data fresh: it reads the portal while it's open in a tab and, when no portal tab is open, every 2 hours through one background tab.
 - **Google sign-in** with the narrowest scopes: only the calendar the tracker creates, and only the one Sheet file it makes.
 
-## Results (10–16 Nov 2026)
-- ~70 students used it every week (~65 a day), 81 store users
-- 140 recruiter forms pre-filled for 37 students
-- 1,066 CGPA questions handled for 62 students
+## Results (as of 24 Nov 2026)
+- 120 installs from the Chrome Web Store
+- 75 students use it every week; 62 used it on a single day (24 Nov)
+- 414 recruiter forms pre-filled for 58 students
+- ~2,900 CGPA questions answered for 70 students
+- 22,000+ actions on the portal by 85 students
 - Dozens of releases, shipped from student feedback
+- Demo video: https://youtu.be/QOnoqJ3yGh4
 
 ## How I built it
 Talk to users, ship fast, measure everything, fix what breaks. Each release started from a manual step students hated, automated it, and checked in the usage counts that it was used. When one update upset students, it was rolled back the same day and the fix shipped the next.
