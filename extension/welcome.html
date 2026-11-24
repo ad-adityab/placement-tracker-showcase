@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welcome · Placement Tracker</title><link rel="icon" href="icons/32.png"><link rel="stylesheet" href="welcome.css"></head>
+<body><main class="wel">
+<section class="left">
+  <h1>Welcome to Placement Tracker 👋</h1>
+  <p class="lead" id="lead">It's already reading your placement portal.</p>
+  <div class="go" id="go" aria-live="polite"></div>
+  <ul class="what" id="what">
+    <li><span class="e">📅</span><b>Deadlines in your Google Calendar, if you want</b>Turn it on any time; everything else works without it.</li>
+    <li><span class="e">✨</span><b>A cleaner portal</b>Every job in one list, your applications in order, what's due this week.</li>
+    <li><span class="e">🗨</span><b>Answers from the placement group</b>What CAC and CAS answered, by firm.</li>
+  </ul>
+  <button class="big opt" id="connect" type="button">📅 Also put deadlines in Google Calendar (optional)</button>
+  <div class="small" id="connectNote">Optional. Google asks once; the tracker sees and changes only the calendar it makes. You can turn it on or off any time from the 📅 Calendar switch on the portal's right edge.</div>
+  <div class="pin"><b>📌 Keep it handy:</b> click <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11H19V7c0-1.1-.9-2-2-2h-4V3.5C13 2.12 11.88 1 10.5 1S8 2.12 8 3.5V5H4c-1.1 0-1.99.9-1.99 2v3.8H3.5c1.49 0 2.7 1.21 2.7 2.7s-1.21 2.7-2.7 2.7H2V20c0 1.1.9 2 2 2h3.8v-1.5c0-1.49 1.21-2.7 2.7-2.7 1.49 0 2.7 1.21 2.7 2.7V22H17c1.1 0 2-.9 2-2v-4h1.5c1.38 0 2.5-1.12 2.5-2.5S21.88 11 20.5 11z"/></svg> <b>Extensions</b> at the top right of Chrome, then <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 9V4h1c.55 0 1-.45 1-1s-.45-1-1-1H7c-.55 0-1 .45-1 1s.45 1 1 1h1v5c0 1.66-1.34 3-3 3v2h5.97v7l1 1 1-1v-7H19v-2c-1.66 0-3-1.34-3-3z"/></svg> next to Placement Tracker. Its window has Check now, Saved answers and settings.</div>
+  <div class="trust">🔄 The tracker reads the placement portal while it's open in a tab. If no portal tab is open, about every 2 hours it opens one in the background (never in front, never when Chrome starts) and leaves it open.<br>🔒 Your placement data stays on this computer and, if you turn Calendar on, in your own calendar. Only anonymous usage counts are sent; turn them off at the bottom of the extension's window. Unofficial, not made by ISB.</div>
+</section>
+<section class="setup" aria-live="polite">
+  <h3>Setting up your tracker</h3><div class="sub" id="sub">Reading your own portal data · about a minute</div>
+  <div id="warn"></div>
+  <div id="items"></div>
+  <div class="bar"><i id="bar"></i></div>
+  <div class="small" id="hint">You can already open the portal: the tracker shows there now and fills in as it reads.</div>
+  <div id="done"></div>
+</section>
+</main><script src="lib.js"></script><script src="welcome.js"></script></body></html>
